@@ -1,20 +1,10 @@
-/*Sfondo dinamico
-.weather-bg {
-    background: linear-gradient(135deg, #60a5fa 0%, #2563eb 100%);
-    min-height: 100vh;
-    color: white;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-*/
-    
+/* Stile sfondo dinamico*/
 body {
     transition: background 0.8s ease;
     min-height: 100vh;
     margin: 0;
 
 }
-
-
 .bg-clear{
 background: linear-gradient(135deg, #fceeb5 0%, #f9d423 100%);
 color:black;
@@ -27,11 +17,27 @@ color:black;
     background: linear-gradient(135deg, #4b6cb7 0%, #182848 100%);
     color: whitesmoke;
 }
-
 .bg-night{
     background:linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%);
     color: white; 
 }
+@keyframes rain {
+   0% { background-position: 0% 0%; }
+   100% { background-position: 20% 100%; }
+}
+.rain-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; 
+  background-image: url();
+  opacity: 0.2;
+  pointer-events: none; 
+  animation: rain 0.5s linear infinite;
+
+}
+
 
 
 

@@ -124,7 +124,11 @@ window.onload= ()=> {
 
 function cambioSfondo(cond,notte){
     const body= document.body;
+    const rainLayer = document.getElementById('rainLayer');
+    
     body.classList.remove('bg-clear', 'bg-clouds', 'bg-rain', 'bg-night');
+
+    rainLayer.style.display= 'none';
 
     if (notte){
         body.classList.add('bg-night');
@@ -142,15 +146,9 @@ function cambioSfondo(cond,notte){
         case 'Drizzle':
         case 'Thunderstorm':
             body.classList.add('bg-rain');
+            rainLayer.style.display= 'block';
             break;
         default:
             body.classList.add('bg-clouds'); 
     }
-}
-
-
-function gay(){
-
-
-
 }

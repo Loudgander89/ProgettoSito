@@ -147,3 +147,10 @@ function cambioSfondo(cond,notte){
             body.classList.add('bg-clouds'); 
     }
 }
+
+
+function gay(){
+
+
+
+}

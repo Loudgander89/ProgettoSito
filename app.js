@@ -132,7 +132,7 @@ function cambioSfondo(cond,notte){
 
     if (notte){
         body.classList.add('bg-night');
-        return;
+        
     }
 
     switch (cond) {

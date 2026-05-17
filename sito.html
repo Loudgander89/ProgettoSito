@@ -3,14 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SkyCast - Meteo Real-Time</title>
+    <title>Trevi Meteo-Previsioni in tempo reale</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="stile_sito.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="app.js"></script>
 </head>
 <body class="weather-bg">
+    <nav class="menu">
+        <div class="contenitore-menu">
+            <ul class="link-menu">
+                <li><a href="" class="attivo">Home</a></li>
+                <li><a href=""></a>Radar</li>
+                <li><a href=""></a>Mare e Vento</li>
+                <li><a href=""></a> Allerta</li>
+            </ul>
+        </div>
+    </nav>
 
-    <div id="rainLayer" class="rain-overlay" style="display: none;"></div>
+   
 
     <div class="container">
         <div class="search-container">
@@ -55,14 +66,8 @@
 
         <div class="previsioni">
             <h3 class="titolo-previsioni">Previsioni prossime 24 ore</h3>
-            <div id="SliderOrario" class="slider-orario">
-                
-
-            </div>
+            <div id="SliderOrario" class="slider-orario"></div>
         </div>
-
     </div>
-
-    <script src="app.js"></script>
 </body>
 </html>

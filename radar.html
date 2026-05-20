@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trevi Meteo - Radar</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="stile-radar.css">
+</head>
+<body class="weather-bg bg-rain">
+
+  
+    <nav class="menu">
+        <div class="div-menu">
+            <a href="sito.html" class="logo-menu"><i class="fas fa-cloud-sun"></i> Trevi Meteo</a>
+            <ul class="pagine-menu">
+                <li><a href="home.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="radar.html" class="attiva"><i class="fas fa-map-marked-alt"></i>Radar</a></li>
+                <li><a href="mappa.html" ><i class="fas fa-tint"></i> Oggi com'è il mare?</a></li>
+                <li><a href="allerta.html"><i class="fas fa-exclamation-triangle"></i> Allerte</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    
+    <div class="container">
+        <header class="header-mappa">
+            <h1>Monitoraggio perturbazioni</h1>
+            <p>Guarda se ti conviene portare l'ombrello</p>
+        </header>
+        
+        <div id="mappa-pioggia"></div>
+
+        <div class="modalità">
+            <button id="btn-radar" class="btn attivo">
+            <span class="punto-live"></span>Radar Pioggia</button>
+            <button id="btn-nuvole" class="btn">Nuvole</button>
+        </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="radar.js"></script>
+
+</body>
+</html>

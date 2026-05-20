@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkyCast - Mappe Radar</title>
+    <link rel="stylesheet" href="stile_sito.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="weather-bg bg-clouds"> <!-- Forziamo uno sfondo nuvoloso -->
+
+    <!-- NAVBAR (Identica, ma cambia la classe 'active') -->
+    <nav class="menu">
+        <div class="div-menu">
+            <a href="sito.html" class="logo-menu"><i class="fas fa-cloud-sun"></i> SkyCast</a>
+            <ul class="pagine-menu">
+               
+                <li><a href="mappa.html" class="active"><i class="fas fa-map-marked-alt"></i> Mappe</a></li>
+                <li><a href="allerta.html"><i class="fas fa-exclamation-triangle"></i> Allerte</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    
+    <div class="container">
+        <div class="weather-card">
+            <h2>Radar Precipitazioni in Tempo Reale</h2>
+            <p style="opacity: 0.8; margin-bottom: 1.5rem;">Visualizza le perturbazioni in avvicinamento.</p>
+            
+           
+            <div class="map-placeholder">
+                <i class="fas fa-map-layer-group" style="font-size: 4rem; margin-bottom: 1rem;"></i>
+                <p>Integrazione Mappa Satellitare (Leaflet API)</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
